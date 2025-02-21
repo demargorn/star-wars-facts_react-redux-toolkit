@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { factsActions } from '../../src/store/facts.slice';
+import { show } from '../../src/store/facts.slice';
 import Form from './Form/Form';
 import List from './List/List';
 import './App.css';
@@ -13,7 +13,7 @@ const App = () => {
    const handlerChangeValue = (e) => {
       const value = Math.max(0, Math.min(10, e.target.value)); // ограничиваем ввод от 0 до 10
       setCount(value);
-      dispatch(factsActions.show(value));
+      dispatch(show(value));
    };
 
    const handlerFormSubmit = (e) => e.preventDefault(); // запрет отправки по Enter

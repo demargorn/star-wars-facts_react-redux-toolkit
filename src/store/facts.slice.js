@@ -58,4 +58,4 @@ const factsSlice = createSlice({
 });
 
 export default factsSlice.reducer;
-export const factsActions = factsSlice.actions;
+export const { show } = factsSlice.actions;
