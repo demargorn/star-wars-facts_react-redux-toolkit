@@ -8,6 +8,7 @@ const Form = ({ value, onChangeValue, onFormSubmit }) => {
                max={10}
                value={value}
                onChange={onChangeValue}
+               placeholder="сколько фактов вы хотите узнать?"
                className='form-control form-input'
             />
          </div>

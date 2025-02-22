@@ -6,7 +6,7 @@ import List from './List/List';
 import './App.css';
 
 const App = () => {
-   const [count, setCount] = useState(0); // счетчик формы
+   const [count, setCount] = useState(''); // счетчик формы
    const items = useSelector((s) => s.facts.displayed); // элементы списка
    const dispatch = useDispatch();
 
